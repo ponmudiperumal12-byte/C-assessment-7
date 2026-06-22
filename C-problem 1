@@ -1,0 +1,14 @@
+#include <stdio.h>
+void function_name(int);
+void function_name(int x)
+{
+    printf("sum");
+}
+
+int main()
+{   
+    int x, y=0;
+    printf ("enter the number:");
+    scanf("%d",&x);
+    function_name ( x);
+}
