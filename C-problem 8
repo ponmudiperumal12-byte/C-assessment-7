@@ -1,0 +1,21 @@
+#include <stdio.h>
+void disp_2digit_odd_sum7()
+{
+    int i =5,odd, f, s, sum=0;
+    while(i <50)
+    {  
+        odd=2*i+1;
+        f=i%10;
+        s=i/10; 
+        sum=f+s;
+        if(sum==7)
+        {
+        printf ("%d",i);
+        }
+        i++;
+    }
+}
+int main()
+{
+     disp_2digit_odd_sum7() ;
+}
