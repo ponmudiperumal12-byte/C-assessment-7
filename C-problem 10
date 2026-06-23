@@ -1,0 +1,20 @@
+#include <stdio.h>
+void disp_2digit_ones5()
+{
+    int i =5, f, s, sum=0;
+    while(i <50)
+    { 
+        f=i%10;
+        s=i/10; 
+        sum=f+s;
+        if(f==5)
+        {
+        printf ("%d",sum);
+        }
+        i++;
+    }
+}
+int main()
+{
+     disp_2digit_ones5() ;
+}
