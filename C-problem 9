@@ -1,0 +1,21 @@
+#include <stdio.h>
+void disp_2digit_even_sum6()
+{
+    int i =5,even, f, s, sum=0;
+    while(i <50)
+    {  
+        even=2*i;
+        f=i%10;
+        s=i/10; 
+        sum=f+s;
+        if(sum==6)
+        {
+        printf ("%d",i);
+        }
+        i++;
+    }
+}
+int main()
+{
+     disp_2digit_even_sum6() ;
+}
