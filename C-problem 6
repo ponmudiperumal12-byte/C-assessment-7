@@ -1,0 +1,16 @@
+#include <stdio.h>
+void disp_odd()
+{
+    int i =0,odd;
+
+    while(i <= 4)
+    {  
+        odd=2*i+1;
+        printf ("%d",odd);
+        i++;
+    }
+}
+int main()
+{
+     disp_odd() ;
+}
