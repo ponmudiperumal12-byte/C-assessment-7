@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+void middle_2digits_prime(int n)
+{
+    int mid, i = 2, count = 0;
+
+    mid = (n / 10) % 100;   // middle two digits
+
+    while(i < mid)
+    {
+        if(mid % i == 0)
+            count++;
+
+        i++;
+    }
+
+    if(mid > 1 && count == 0)
+        printf("Prime");
+    else
+        printf("Not Prime");
+}
+
+int main()
+{
+    int n;
+    printf ("enter the number:");
+    scanf("%d", &n);
+
+    middle_2digits_prime(n);
+}
