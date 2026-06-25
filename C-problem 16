@@ -1,0 +1,25 @@
+#include <stdio.h>
+void check_num(int n)
+{
+    int first, temp;
+
+    temp = n;
+
+    while(temp >= 10)
+        temp = temp / 10;
+
+    first = temp;
+
+    if(first % 2 != 0)
+        n = n - 100;
+
+    printf("%d", n);
+}
+
+int main()
+{
+    int n;
+    printf ("enter the movie");
+    scanf("%d", &n);
+    check_num(n);
+}
