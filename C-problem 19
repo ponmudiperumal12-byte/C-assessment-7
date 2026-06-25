@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+void check_first_twodigit_prime(int n)
+{
+    int last2, i = 2, count = 0;
+
+    last2 = n % 100;   // ones and tens digits
+
+    while(i < last2)
+    {
+        if(last2 % i == 0)
+            count++;
+
+        i++;
+    }
+
+    if(last2 > 1 && count == 0)
+        printf("Prime");
+    else
+        printf("Not Prime");
+}
+
+int main()
+{
+    int n;
+     printf ("enter the number:");
+    scanf("%d", &n);
+
+    check_first_twodigit_prime(n);
+}
