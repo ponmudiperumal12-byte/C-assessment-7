@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+void disp_single_Prime(int n)
+{
+    int digit, count = 0;
+
+    while(n > 0)
+    {
+        digit = n % 10;
+
+        if(digit == 2 || digit == 3 || digit == 5 || digit == 7)
+            count++;
+
+        n = n / 10;
+    }
+
+    printf("%d", count);
+}
+
+int main()
+{
+    int n;
+    scanf("%d", &n);
+    disp_single_digitPrime(n);
+}
