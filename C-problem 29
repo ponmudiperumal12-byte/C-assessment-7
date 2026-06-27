@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+void disp_lcm2(int a, int b)
+{
+    int i;
+
+    if(a > b)
+        i = a;
+    else
+        i = b;
+
+    while(1)
+    {
+        if(i % a == 0 && i % b == 0)
+        {
+            printf("%d", i);
+            break;
+        }
+        i++;
+    }
+}
+
+int main()
+{
+    int a, b;
+    printf ("enter the number:");
+    scanf("%d%d", &a, &b);
+    disp_lcm2(a, b);
+}
