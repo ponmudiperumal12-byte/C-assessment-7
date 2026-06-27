@@ -1,0 +1,23 @@
+#include <stdio.h>
+void disp_total_odd_digits(int n)
+{
+    int digit, count = 0;
+    while(n > 0)
+    {
+        digit = n % 10;
+
+        if(digit % 2 != 0)
+            count++;
+
+        n = n / 10;
+    }
+
+    printf("%d", count);
+}
+int main()
+{
+    int n;
+    printf("enter the number:");
+    scanf("%d", &n);
+    disp_total_odd_digits(n);
+}
