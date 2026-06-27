@@ -1,0 +1,30 @@
+#include <stdio.h>
+void disp_lcm3(int a, int b, int c)
+{
+    int i;
+
+    if(a >= b && a >= c)
+        i = a;
+    else if(b >= a && b >= c)
+        i = b;
+    else
+        i = c;
+
+    while(1)
+    {
+        if(i % a == 0 && i % b == 0 && i % c == 0)
+        {
+            printf("%d", i);
+            break;
+        }
+        i++;
+    }
+}
+
+int main()
+{
+    int a, b, c;
+    printf ("enter the number:");
+    scanf("%d%d%d", &a, &b, &c);
+    disp_lcm3(a, b, c);
+}
